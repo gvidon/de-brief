@@ -241,7 +241,7 @@ to come
 
 ```
 
-to come
+Apollo Cache - Standard
 
 ```
 
@@ -307,4 +307,10 @@ to come
 ```
 Credentials
 
+```
+
+28. Third party libraries
+
+```
+1. Google News API
 ```
