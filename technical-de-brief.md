@@ -1,16 +1,17 @@
 # Technical de-brief
-
-```
-
 1. Handshaking between ReadApp,  HASURA and Postgres
-
-[Summary - to come]
+* The ReadApp uses GraphQL API to the PostrgesDB provided by Hasura
+* All interactions between the app and DB happens through Hasura interface
+* No SQL queries are directly called from within the ReadApp
+  * The queries are sent as GraphQL requests which then are translated into SQL by Hasura
+* Permissions to the data are defined and managed on the side of Hasura.
 
 2. Enabling Lounge Flag in DB - when LOUNGE is created
+In order to activate a lounge:
+* Navigate to the `lounge` table page
+* Find the lounge record
+* And while editing it change the value of `isActive` to `true`.
 
-[Summary - to come]
-
-```
 
 ## Back end
 
